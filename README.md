@@ -1,6 +1,7 @@
-# flutterxylophone
+# flutter xylophone
 
 A simple xylophone app made on flutter
+![alt text](docs/xylophone.png)
 
 ## Getting Started
 
