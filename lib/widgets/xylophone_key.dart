@@ -17,14 +17,16 @@ class XylophoneKey extends StatelessWidget {
   final String text;
   @override
   Widget build(BuildContext context) {
-    return FlatButton(
-      color: bgColor,
-      textColor: textColor,
-      onPressed: (){
-        final player = AudioCache();
-        player.play(audioAssetsPath);
-      },
-      child: Text(text),
+    return Expanded(
+      child: FlatButton(
+        color: bgColor,
+        textColor: textColor,
+        onPressed: (){
+          final player = AudioCache();
+          player.play(audioAssetsPath);
+        },
+        child: Text(text),
+      ),
     );
   }
 }
